@@ -1,0 +1,58 @@
+[class^="btn"] {
+	width: 88px;
+	height: 32px;
+	background: #343F50;
+	box-shadow: inset 1px 1px #4a5568;
+	border: 1px solid #1A202C;
+	color: #CBD5DF;
+}
+
+[class^="btn"]:not(:disabled):hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.btn:active {
+	box-shadow: inset 1px 1px #262F3E;
+}
+
+.btn:focus {
+	outline: none;
+	border: 1px solid #439AFF;
+}
+
+.btn:disabled {
+	box-shadow: none;
+	color: #4A5568;
+	text-decoration: none;
+	background-color: 3A4556;
+	border: 1px solid #343E4E;
+}
+
+.btn-positive {
+	color: #439AFF;
+}
+
+.btn-positive:hover, .btn-positive:active {
+	background: #439AFF;
+	border: 1px solid #439AFF;
+	box-shadow: inset 1px 1px #73B4FF;
+}
+
+.btn-positive:active {
+	box-shadow: inset 1px 1px #3B78BE;
+}
+
+.btn-negative{
+	color: #EB5757;
+}
+
+.btn-negative:hover, .btn-negative:active {
+	background: #EB5757;
+	border: 1px solid #FD6F6F;
+	box-shadow: inset 1px 1px #EB5757;
+}
+
+.btn-negative:active {
+	box-shadow: inset 1px 1px #D94242;
+}
