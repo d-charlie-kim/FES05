@@ -1,0 +1,137 @@
+Reset */
+body, h1, h2, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+
+body {
+	font-family: 'arial';
+	background-color: gray;
+	background-image: url(images/background.gif);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: #999;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 40px auto;
+	background-color: #eaeaea;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.header {
+	color: white;
+	text-align: center;
+	padding: 40px 0 60px;
+	background-size: cover;
+	background-image: url(images/cover04.png);
+	background-position: center;
+}
+
+.header .profile {
+	border-radius: 200px / 100px;
+	width: 140px;
+	margin: 50px 0 10px;
+	border: 5px solid;
+}
+
+.header h1 {
+	font-size: 80px;
+}
+
+.header p {
+	font-weight: bold;
+	letter-spacing: 0.3em;
+	text-indent: 0.3em;
+	font-size: 12px;
+	border-top: 4px solid;
+	padding-top: 8px;
+	width: 210px;
+	margin: 12px auto;
+}
+
+.section {
+	margin: 20px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	border-radius: 4px;
+	background-repeat: no-repeat;
+	background-position: right 30px center;
+}
+
+.section.information { background-image: url(images/icon-information.png); }
+.section.skill       { background-image: url(images/icon-skills.png); }
+
+.section h2 {
+	margin-bottom: 20px;
+	color: deeppink;
+}
+
+.list li {
+	border-left: 5px solid #eaeaea;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.list li:hover {
+	border-color: pink;
+	color: pink;
+}
+
+.footer {
+	background-color: white;
+	color: #ddd;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.icon {
+	display: inline-block;
+	border: 1px solid #ddd;
+	padding: 0.4em 1em;
+	border-radius: 40px;
+	transition: all .4s;
+}
+
+.icon:hover {
+	border-color: black;
+	color: black;
+}
+
+
+/*
+.icon {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	text-indent: -9999px;
+	background-size: 144px 96px;
+	background-image: url(images/icons.png);
+	border-radius: 50%;
+}
+
+.icon.github   { background-position: left top; }
+.icon.facebook { background-position: center top; }
+.icon.email    { background-position: right top; }
+
+.icon:hover {
+	background-position-y: bottom; 
+}
+

@@ -1,0 +1,41 @@
+body, h1, p{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'arial';
+	background-image: url(images/bg.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.contents {
+	width: 300px;
+	margin: 100px auto;
+}
+
+.contents img {
+	text-align: center;
+	vertical-align: top;
+}
+
+.section {
+	background: #995D32;
+	padding: 13px 20px 30px;
+	border-radius: 0 0 30px 30px;
+	box-shadow: 0 10px #4A260B;
+}
+
+.section h1 {
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 12px;
+}
+
+.section p {
+	color: #D7C0B3;
+	font-size: 16px;
+	line-height: 23px;
+}
