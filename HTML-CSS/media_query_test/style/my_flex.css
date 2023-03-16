@@ -1,0 +1,69 @@
+p, h1, h2, a {
+	margin: 0;
+	padding: 0;
+}
+
+.contents {
+	display: flex;
+	margin: auto;
+	margin-top: 240px;
+	justify-content: center;
+}
+
+.contents .text {
+	align-items: center;
+	display: block;
+	top: 240px;
+	left: 360px;
+	width: 612px;
+	height: 264px;
+}
+
+.text h1{
+	font-weight: 50;
+	font-size: 70px;
+}
+
+.bigfont {
+	margin-bottom: 20px;
+}
+
+.text p {
+	width: 343px;
+	height: 60px;
+	font-size: 20px;
+}
+
+.image {
+	display: block;
+}
+
+.upimg, .downimg {
+	position: relative;
+}
+
+.upimg {
+	margin-bottom: 20px;
+}
+
+.upimg h2, .downimg h2 {
+	position: absolute;
+	color: white;
+	top: 40px;
+	left: 40px;
+}
+
+.btn-push {
+	position: absolute;
+	top: 230px;
+	left: 373px;
+	width: 83px;
+	height: 20px;
+	background: url(../img/icon.svg) no-repeat 63.75px center/20px;
+	color: white;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	
+}
