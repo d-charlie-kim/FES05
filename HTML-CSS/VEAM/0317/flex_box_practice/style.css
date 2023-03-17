@@ -1,0 +1,39 @@
+.playground {
+	border: 10px solid maroon;
+	width: 980px;
+	margin: 0 auto;
+	border-radius: 20px;
+	background-color: skyblue;
+
+	display: flex;
+}
+
+.frog {
+	background-color: mediumaquamarine;
+	color: lime;
+	font-size: 40px;
+	margin: 10px;
+	border: 6px solid green;
+	border-radius: 10px;
+
+	flex-basis: 200px;
+	flex-shrink: 0;
+}
+
+
+.playground:nth-child(3) .frog {
+	flex-shrink: 1;
+}
+
+
+.playground:nth-child(5) .frog {
+	flex-shrink: 1;
+}
+.playground:nth-child(5) > .frog.last {
+	flex-shrink: 0;
+}
+
+/* 
+!important
+min-width:auto 가 initial 값
+ */
