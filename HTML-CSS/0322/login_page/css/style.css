@@ -1,0 +1,109 @@
+.a11y-hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+:root {
+	font-family: sans-serif;
+}
+
+body, p, label, input, span, a, hr, button, img, h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: gainsboro;
+}
+
+.login-page {
+	width: 520px;
+	height: 736px;
+	margin: 150px auto;
+	background-color: white;
+	border-radius: 10px;
+	position: relative;
+}
+.page-title {
+	width: 100%;
+	height: 58px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #c4C4C4;
+}
+
+.page-title h1 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.page-title button {
+	position: absolute;
+	right: 24px;
+	width: 16px;
+	height: 16px;
+	border: none;
+	background: url(../img/close.svg) 0 0/ 16px no-repeat;
+}
+
+.text-greeting {
+	font-size: 20px;
+	font-weight: 500;
+	margin: 26px 0 24px 24px;
+	justify-content: left;
+}
+
+.input {
+	width: 472px;
+	height: 50px;
+	
+}
+
+.snsLogin-wrap {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
+.btn-snsLogin {
+	margin: 0 24px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 15px 0;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-snsLogin img {
+	position: absolute;
+	display: block;
+	left: 12px;
+}
+
+.btn-snsLogin.google {
+	border: 1px solid #767676;
+}
+
+.btn-snsLogin.facebook {
+	border: 1px solid #2D9CDB;
+	
+}
+
+.btn-snsLogin.naver {
+	border: 1px solid #00BF18;
+}
+
+.btn-snsLogin.kakao {
+	border: 1px solid #F2C94C;
+
+}
+
