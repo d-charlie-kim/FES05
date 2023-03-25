@@ -1,9 +1,6 @@
 :root {
-    font-family: 'Montserrat', sans-serif;
-	/*
+  font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	font-weight: 700;
-	*/
 }
 
 body, span, p, h1, h2, h3, ul, li{
@@ -11,32 +8,40 @@ body, span, p, h1, h2, h3, ul, li{
 	padding: 0;
 }
 
-body {
-	background-color: #673399;
+.l_wrapper {
 	width: 1080px;
-	margin: 100px auto;
+	margin: 0 auto;
 }
 
-.header-wrap {
-	width: 100%;
-	display: flex;
-	align-items: center;
+	.section {
+	padding: 100px 0;
+}
+
+.section_purple {
+	background-color: #673399;
+}
+
+.section-header {
 	margin-bottom: 100px;
 }
-	
+
 .header-title {
-	width: 26%;
+	display: flex;
+	align-items: center;
+}
+
+.title-headings {
+	flex-basis: 26%;
+	flex-shrink: 0;
 	color: white;
 	font-size: 40px;
 	font-weight: 500;
 }
 
-.header-title span {
-	position: relative;
-}
-
-.header-title span::after {
-	content: "";
+.title-headings strong {
+	font-weight: 500;
+	box-shadow: inset 0 -20px 0 orangered;
+	/* content: "";
 	display: block;
 	position: absolute;
 	background-color: orangered;
@@ -44,101 +49,84 @@ body {
 	left: 0;
 	width: 100%;
 	height: 50%;
-	z-index: -1;
+	z-index: -1; */
 }
 
-.header-paragraph {
-	width: 74%;
+.header-title p {
+	color: #bd8fe8;
+	font-size: 14px;
+	max-width: 500px;
+	line-height: 23px;
 	display: flex;
 	align-items: center;
-	font-size: 14px;
-	color: #bd8fe8;
-	overflow: hidden;
 }
 
-.header-paragraph > p {
-	display: -webkit-inline-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 4;
-	margin-right: 230px;
-	line-height: 23px;
+.header-title p::before {
+  content: ' ';
+  width: 100px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  margin-right: 40px;
 }
 
-.header-paragraph > hr {
-	display: inline-block;
-	width: 320px;
-	height: 2px;
-	border: 0;
-	background-color: #bd8fe8;
-	margin-right: 25px;
-}
-
-main {
-	width: inherit;
+.card-wrap{
 	display: flex;
-	gap: 24px;
 	flex-direction: column;
+	gap: 24px;
 }
 
-.article {
+.card {
+	background-color: white;
 	display: flex;
+	min-height: 200px;
 }
 
-.article:nth-child(even) {
+.card:nth-child(even) {
 	flex-direction: row-reverse;
 }
 
-.article-photo {
+.card-cover {
 	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 26%;
-	text-align: center;
-	vertical-align: middle;
+	flex-basis: 26%;
+	flex-shrink: 0;
 }
 
-.article-photo .opacity {
-	position: absolute;
+.card-cover img {
 	width: 100%;
 	height: 100%;
-	background: #673399;
-	opacity: 50%;
-	transition-duration: 1s;
-}
-
-.article-photo .opacity:hover {
-	opacity: 0%;
-	transition-duration: 1s;
-}
-
-.article-photo img {
 	object-fit: cover;
-	width: 100%;
-	height: 100%;
 }
 
-.article-photo h2 {
+.card-cover h2 {
 	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	font-size: 30px;
 	font-weight: 500;
 	color: white;
+	background-color: rgba(102, 47, 154, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.article-contents {
+.card-contents {
 	width: 74%;
 	background-color: white;
 	padding: 24px;
 	box-sizing: border-box;
 }
 
-.article-contents h3 {
+.card-contents h3 {
 	color: #673399;
 	font-size: 18px;
 	margin-bottom: 32px;
 }
 
-.article-contents ul {
+.card-contents ul {
 	display: flex;
 	flex-direction: column;
 	font-size: 14px;
@@ -146,11 +134,11 @@ main {
 	list-style: none;
 }
 
-.article-contents ul li:not(:last-child) {
+.card-contents ul li:not(:last-child) {
 	margin-bottom: 14px;
 }
 
-.article-contents ul li::before {
+.card-contents ul li::before {
 	content: "";
 	display: inline-block;
 	margin-right: 10px;
@@ -160,13 +148,14 @@ main {
 	background: #bd8fe8;
 }
 
+/*
 @media (max-width: 1180px) {
 	body {
 		width: auto;
 		margin: 0 5%;
 	}
 
-	/* header media query */
+	header media query
 	.header-wrap {
 		flex-direction: column;
 		text-align: center;
@@ -176,12 +165,8 @@ main {
 		margin: 0 0 30px 0;
 	}
 
-	.header-paragraph {
+	.header-title{
 		display: inline;
-		margin: 0;
-	}
-	.header-paragraph hr {
-		width: 80%;
 		margin: 0;
 	}
 	
@@ -193,7 +178,7 @@ main {
 
 @media (max-width: 800px) {
 
-	/* main article media query */
+	main article media query
 	.article {
 		flex-direction: column;
 	}
@@ -210,4 +195,4 @@ main {
 	.article-contents {
 		width: 100%;
 	}
-}
+} */
