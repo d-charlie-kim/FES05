@@ -1,9 +1,5 @@
-:root {
-  font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-}
-
-body, span, p, h1, h2, h3, ul, li{
+/* reset */
+body, span, p, h1, h2, h3, ul, li, img{
 	margin: 0;
 	padding: 0;
 }
@@ -12,17 +8,20 @@ ul {
 	list-style: none;
 }
 
-.l_wrapper {
-	width: 1080px;
-	margin: 0 auto;
+
+/* common */
+:root {
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 }
 
-	.section {
+.section {
 	padding: 100px 0;
 }
 
-.section_purple {
-	background-color: #673399;
+.l_wrapper {
+	width: 1080px;
+	margin: 0 auto;
 }
 
 .section-header {
@@ -32,59 +31,7 @@ ul {
 .header-title {
 	display: flex;
 	align-items: center;
-}
-
-.title-headings {
-	flex-basis: 26%;
-	flex-shrink: 0;
-	color: white;
-	font-size: 40px;
-	font-weight: 500;
-}
-
-.title-headings strong {
-	font-weight: 500;
-	box-shadow: inset 0 -20px 0 orangered;
-}
-
-.header-title p {
-	color: #bd8fe8;
-	font-size: 14px;
-	max-width: 500px;
-	line-height: 23px;
-	display: flex;
-	align-items: center;
-}
-
-.header-title p::before {
-  content: ' ';
-  width: 100px;
-  height: 2px;
-  flex-shrink: 0;
-  background-color: currentColor;
-  margin-right: 40px;
-}
-
-.section-contents{
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-}
-
-.card {
-	background-color: white;
-	display: flex;
-	min-height: 200px;
-}
-
-.card:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-.card-cover {
 	position: relative;
-	flex-basis: 26%;
-	flex-shrink: 0;
 }
 
 .card-cover img {
@@ -93,7 +40,203 @@ ul {
 	object-fit: cover;
 }
 
-.card-cover h2 {
+
+
+
+/* section_pink */
+.section_pink {
+	background-color: seashell;
+}
+
+.section_pink .title-headings {
+	flex-basis: 32%;
+	flex-shrink: 0;
+	color: salmon;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.section_pink .title-headings strong {
+	font-weight: 500;
+	box-shadow: inset 0 -20px 0 white;
+}
+
+.section_pink .title-button {
+	position: absolute;
+	padding: 13px 18px;
+	font-family: inherit;
+	right: 0;
+	font-size: 14px;
+	background-color: orangered;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 5px rgb(179, 50, 3);
+	color: white;
+}
+
+.section_pink .section-contents {
+	display: flex;
+	gap: 24px;
+}
+
+.section_pink .card {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.section .card-cover {
+	position: relative;
+}
+
+.section_pink .card-cover img {
+	box-shadow: 0 4px 1px black;
+}
+
+.section_pink .card:first-child .card-cover::after {
+	content: ' ';
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: -10px;
+	left: -10px;
+	background: url(./images/badge.png) no-repeat;
+}
+
+.section_pink .card-contents {
+	padding: 24px;
+	height: 100%;
+}
+
+.section_pink .card-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+	margin-bottom: 20px;
+}
+
+.section_pink .tag {
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 5px 8px;
+	box-sizing: border-box;
+	background-color: #f1e0f8;
+	color: #673399;
+	border-radius: 5px;
+}
+
+.section_pink .contents-headings {
+	font-size: 24px;
+	margin-bottom: 18px;
+	min-height: 72px;
+	line-height: 34px;
+}
+
+.section_pink .card-contents > p {
+	font-size: 14px;
+	line-height: 20px;
+	color: rgb(146, 146, 146);
+}
+
+.section_pink .card-people {
+	height: 68px;
+	flex-shrink: 0;
+	margin: 0 0 0 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	color: rgb(146, 146, 146);
+	border-top: 4px solid #eeeeee;
+}
+
+.section_pink .people {
+	position: relative;
+}
+
+.section_pink .people img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 3px solid white;
+	position: absolute;
+	right: 24px;
+	bottom: -17px;
+}
+
+.section_pink .people img:nth-child(1) {
+	right: 72px;
+}
+
+.section_pink .people img:nth-child(2) {
+	right: 48px;
+}
+
+
+
+
+
+/* section_purple */
+.section_purple {
+	background-color: #673399;
+}
+
+.section_purple .title-headings {
+	flex-basis: 26%;
+	flex-shrink: 0;
+	color: white;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.section_purple .title-headings strong {
+	font-weight: 500;
+	box-shadow: inset 0 -20px 0 orangered;
+}
+
+.section_purple .header-title p {
+	color: #bd8fe8;
+	font-size: 14px;
+	max-width: 500px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+}
+
+.section_purple .header-title p::before {
+  content: ' ';
+  width: 100px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  margin-right: 40px;
+}
+
+.section_purple .section-contents{
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.section_purple .card {
+	background-color: white;
+	display: flex;
+	min-height: 200px;
+}
+
+.section_purple .card:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.section_purple .card-cover {
+	position: relative;
+	flex-basis: 26%;
+	flex-shrink: 0;
+}
+
+.section_purple .card-cover h2 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -108,7 +251,7 @@ ul {
 	align-items: center;
 }
 
-.card-contents {
+.section_purple .card-contents {
 	flex-basis: 0;
 	flex-grow: 1;
 	min-width: 0;
@@ -116,17 +259,17 @@ ul {
 	box-sizing: border-box;
 }
 
-.contents-headings {
+.section_purple .contents-headings {
 	color: #673399;
 	font-size: 18px;
 	margin-bottom: 30px;
 }
 
-.contents-lists {
+.section_purple .contents-lists {
 	font-size: 14px;
 }
 
-.contents-lists li {
+.section_purple .contents-lists li {
 	text-indent: -20px;
 	padding-left: 20px;
 }
@@ -145,51 +288,4 @@ ul {
 	background: #bd8fe8;
 }
 
-/*
-@media (max-width: 1180px) {
-	body {
-		width: auto;
-		margin: 0 5%;
-	}
-
-	header media query
-	.header-wrap {
-		flex-direction: column;
-		text-align: center;
-	}
-	.header-title {
-		width: 300px;
-		margin: 0 0 30px 0;
-	}
-
-	.header-title{
-		display: inline;
-		margin: 0;
-	}
-	
-	.header-paragraph p{
-		width: 80%;
-		margin: 0;
-	}
-}
-
-@media (max-width: 800px) {
-
-	main article media query
-	.article {
-		flex-direction: column;
-	}
-
-	.article:nth-child(even) {
-		flex-direction: column;
-	}
-
-	.article-photo {
-		height: 80px;
-		width: 100%;
-	}
-
-	.article-contents {
-		width: 100%;
-	}
-} */
+/* media_query */
