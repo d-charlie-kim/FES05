@@ -1,0 +1,12 @@
+.one {
+	// 지역변수
+	$value: red !global; 
+	color: $value;
+	.threee {
+		background-color: $value;
+	}
+}
+
+.two {
+	color: $value;
+}
