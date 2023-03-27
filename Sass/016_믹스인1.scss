@@ -30,3 +30,18 @@
 //     @include center-xy;
 //     background: white;
 // }
+
+@mixin box {
+	width: 100px;
+	height: 100px;
+}
+
+.card {
+	@include box;
+	background-color: blue;
+}
+
+.profile {
+	@include box;
+	background-color: red;
+}

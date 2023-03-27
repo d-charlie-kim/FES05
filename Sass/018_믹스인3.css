@@ -1,6 +1,8 @@
 .card {
   width: 100px;
   height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
   background-color: blue;
 }
 
@@ -8,4 +10,4 @@
   width: 100px;
   height: 100px;
   background-color: red;
-}/*# sourceMappingURL=016_믹스인1.css.map */
+}/*# sourceMappingURL=018_믹스인3.css.map */
