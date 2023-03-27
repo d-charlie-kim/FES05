@@ -9,6 +9,8 @@ ul {
 }
 
 
+
+
 /* common */
 :root {
   font-family: 'Montserrat', sans-serif;
@@ -20,7 +22,7 @@ ul {
 }
 
 .l_wrapper {
-	width: 1080px;
+	max-width: 1080px;
 	margin: 0 auto;
 }
 
@@ -46,10 +48,11 @@ ul {
 /* section_pink */
 .section_pink {
 	background-color: seashell;
+	position: relative;
 }
 
 .section_pink .title-headings {
-	flex-basis: 32%;
+	flex-basis: 40%;
 	flex-shrink: 0;
 	color: salmon;
 	font-size: 40px;
@@ -72,6 +75,7 @@ ul {
 	border-radius: 5px;
 	box-shadow: 0 5px rgb(179, 50, 3);
 	color: white;
+	cursor:pointer;
 }
 
 .section_pink .section-contents {
@@ -85,6 +89,7 @@ ul {
 	flex-direction: column;
 	flex-grow: 1;
 	flex-basis: 0;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.2);
 }
 
 .section .card-cover {
@@ -92,7 +97,7 @@ ul {
 }
 
 .section_pink .card-cover img {
-	box-shadow: 0 4px 1px black;
+	box-shadow: 0 4px 0px black;
 }
 
 .section_pink .card:first-child .card-cover::after {
@@ -173,7 +178,6 @@ ul {
 .section_pink .people img:nth-child(2) {
 	right: 48px;
 }
-
 
 
 
@@ -288,4 +292,26 @@ ul {
 	background: #bd8fe8;
 }
 
+
+
+
 /* media_query */
+
+@media (max-width: 1180px) {
+	.l_wrapper {
+		width: 100%;
+	}
+	.section {
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 945px) {
+	.section_pink .section-contents,
+	.section_purple .section-contents,
+	.section_purple .card,
+	.section_purple .card:nth-child(even) {
+		flex-direction: column;
+	}
+}
