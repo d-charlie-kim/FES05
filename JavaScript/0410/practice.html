@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js practice</title>
+	<style>
+		.canvas {
+			width: 500px;
+			height: 500px;
+			margin: auto;
+			background-color: black;
+		}
+
+		ul {
+			margin-top: 50px;
+			display: flex;
+			gap: 100px;
+			justify-content: center;
+		}
+
+		.green {
+			background-color: green;
+		}
+
+		.yellow {
+			background-color: yellow;
+		}
+
+		.red {
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="canvas"></div>
+	<ul>
+		<li>
+			<button type="button" class="btn-red">
+				빨강
+			</button>
+		</li>
+		<li>
+			<button type="button" class="btn-yellow">
+				노랑
+			</button>
+		</li>
+		<li>
+			<Button type="button" class="btn-green">
+				초록
+			</Button>
+		</li>
+	</ul>
+
+	<script>
+		const green = document.querySelector('.btn-green');
+		const red = document.querySelector('.btn-red');
+		const yellow = document.querySelector('.btn-yellow');
+		const canvas = document.querySelector('.canvas');
+
+		green.addEventListener('click', function () {
+			canvas.classList.remove('red');
+			canvas.classList.remove('yellow');
+			canvas.classList.toggle('green');
+		})
+		red.addEventListener('click', function () {
+			canvas.classList.remove('green');
+			canvas.classList.remove('yellow');
+			canvas.classList.toggle('red');
+		})
+		yellow.addEventListener('click', function () {
+			canvas.classList.remove('red');
+			canvas.classList.remove('green');
+			canvas.classList.toggle('yellow');
+		})
+
+	</script>
+</body>
+
+</html>
