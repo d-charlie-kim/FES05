@@ -16,7 +16,7 @@ function calendar(newYear, newMonth) {
 				days = document.querySelectorAll('tr td');
 
 	for (let i = 0; i < days.length; i++) {
-		days[i].innerHTML = '&nbsp'; // textContent 아니고 innerHTML 사용 :: HTML 특수문자를 사용하기 위해 :: 날짜가 없는 행도 간격 유지하기 위해
+		days[i].innerHTML = '&nbsp'; // textContent 아니고 innerHTML 사용 :: HTML 특수문자를 사용하기 위해 ::날짜가 없는 행도 간격 유지하기 위해
 	}
 
 	for (let i = day; i < day + timeLength; i++) {
