@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex 활용</title>
+    <style>
+      div.flex-container {
+        display: flex;
+        /* 원래 세로 정렬이던걸 가로로 만들어 줌 */
+
+        flex-direction: column;
+      }
+      span.flex-container {
+        display: flex;
+        flex-direction: row;
+        /* row는 기본값(가로 정렬이라) 안 적어도 됨 */
+
+        /* 간격 관련한 부분 */
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+      }
+      div.flex-item {
+        background: skyblue;
+        border: 3px solid royalblue;
+      }
+      span.flex-item {
+        background: skyblue;
+        border: 3px solid royalblue;
+      }
+      .center {
+        justify-content: center;
+        /* 화면 중앙에 위치 */
+
+        justify-content: flex-end;
+        /* 화면 오른쪽 끝에 위치 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <!-- div 블록 -->
+      <div class="flex-container">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+      </div>
+
+      <!-- span 인라인 -->
+      <span class="flex-container">
+        <span class="flex-item">A</span>
+        <span class="flex-item">B</span>
+        <span class="flex-item">C</span>
+      </span>
+
+      <span class="flex-container center">
+        <span class="flex-item">A</span>
+        <span class="flex-item">B</span>
+        <span class="flex-item">C</span>
+      </span>
+    </div>
+  </body>
+</html>

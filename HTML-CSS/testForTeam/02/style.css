@@ -1,0 +1,53 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+div {
+	margin: 0;
+	padding: 30px;
+	border: 5px solid rosybrown;
+}
+
+.first, .second {
+	display: flex;
+	justify-content: space-between;
+}
+
+.third {
+	display: flex;
+	justify-content: space-around;
+}
+
+.second div {
+	flex-basis: 20%;
+}
+
+.first > div:first-child {
+	display: flex;
+	flex-direction: column;
+}
+
+.first > div {
+	flex-basis: 10%;
+}
+
+.line {
+	padding: 5px;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.third > div {
+	flex-basis: 10%;
+}
+
+.third .wrap {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	flex-basis: 0;
+}

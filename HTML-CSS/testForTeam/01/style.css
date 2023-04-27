@@ -1,0 +1,60 @@
+div {
+	margin: 0;
+	padding: 30px;
+	border: 5px solid rosybrown;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+}
+
+.first {
+	display: flex;
+	flex-grow: 1;
+}
+
+.first, .second, .second-right, .second-right-down {
+	display: flex;
+	gap: 30px;
+}
+
+.one {
+	flex-basis: 40%;
+}
+
+.two {
+	flex-grow: 0;
+}
+
+.three {
+	flex-basis: 20%;
+	/* justify-self: flex-end; */
+	align-self: flex-end;
+}
+
+.second {
+	flex-grow: 2;
+}
+
+.second-right {
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.a {
+	flex-basis: 40%;
+}
+
+.b {
+	flex-grow: 1;
+}
+
+.second-right-down {
+	flex-basis: 80%;
+}
+
+.cl, .cr {
+	flex-grow: 1;
+}
